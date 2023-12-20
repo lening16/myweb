@@ -1,0 +1,283 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Russo+One&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poppins&display=swap');
+
+.insigniahead {
+    display: inline-block;
+    height: 100px;
+    width: 120px;
+  
+}
+
+.encabezado {
+    padding: 0;
+   display: inline-block;
+    box-sizing: border-box;
+    color: rgb(255, 0, 34);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 60px ;
+
+
+}
+
+#linea{
+    width: 100%;
+    height: 10px;
+    /*background-image: url(./img/linea.jpg);*/
+    background-color: brown;
+}
+
+.header-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    
+}
+
+.header-navegacion > ul{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0 auto;
+
+}
+
+.header-navegacion> ul > li{
+padding: 0 55px;
+border-right: 1px solid #ccc;
+}
+
+.header-navegacion> ul > li > a {
+    text-decoration: none;
+    color: rgb(255, 0, 76);
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in;
+    position: relative;
+    
+}
+
+.header-navegacion> ul > li > a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: brown;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-navegacion> ul > li > a:hover::after {
+width: 100%;
+visibility: visible;
+} 
+     
+.marcohead {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+height: 350px;
+width: 100%;
+background-image: url(./img/entrada3.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.contenedorcard{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 125px ;
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    flex-wrap: wrap;
+    gap: 30px   ;
+}
+.contenedorcard > .card {
+   margin-top: 230px; 
+   
+   
+}
+
+.contenedorcard > .card >.card-img-top {
+width: 350px;
+height: 350px;
+object-fit: cover;
+}
+
+.contenedorcard > .card > .card-body > .card-title{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.contenedorcard > .card > .card-body > .card-text {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.contenedorcard > .card >.card-img-top:hover {
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+    }
+
+.banner-secundario{
+margin-top: 900px;
+width: 100%;
+height: 70px;
+background-color: #ccc;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.banner-secundario > .texto-banner{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium','Roboto' ;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    left: 0px;
+}
+
+/*.container{
+ margin-left: 0;
+ height: 30px;   
+}*/
+/*
+.container > .dropdown > ul > li {
+font-size: 1.5rem;
+} */
+
+
+.aspectosrelevantes{
+display: flex;
+gap: 20px ;
+background-color: darkorange;
+height: 400px;
+
+}
+
+.etiquetas-competencias{
+position: absolute;
+display: inline-block;
+margin: 15px;
+padding: 0px;
+width: 200px;
+height: 50px;
+}
+
+.etiquetas-competencias > h2 { 
+padding:0;
+background-color: brown;
+cursor: pointer;
+font-family: Poppins;
+color: white;  
+border: orange 5px solid;  
+border: white 8px groove;
+border: PowderBlue 5px solid;
+}
+
+.slide{
+display:inline-flex; 
+width: 800px;
+height: 400px;
+margin-left: 250px;
+margin-top: 0px;
+padding: 0px;
+}
+
+.slide >.carousel-inner{
+width: 100%;
+height: 100%;
+
+}
+
+.slide >.carousel-inner >.carousel-item{
+width: 100%;
+height: 100%;
+background-color: antiquewhite;
+}
+
+.slide >.carousel-inner >.carousel-item > .w-100{
+    padding: 0;
+    margin: 0;
+    width: 600px;
+    height: 400px;
+    border-radius: 30px;
+    background-size: cover;
+    object-fit: contain;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        filter: invert(108%);
+      }
+.contactosdireccion{
+    display: flexbox;
+    width: 950px;
+    height: 600px;
+    padding: 10px;
+    background-image: url(./img/entradaconfigurada.jpg);
+    background-repeat: no-repeat;
+        
+}
+
+.aspectosrelevantes > .clearfix{
+    display: flexbox;
+    width: 600px;
+    height: 600px;
+    color: white;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.text-center{
+  color: brown;
+word-spacing: 1px;
+
+}
+
+
+
+
+
+
+
+
+
